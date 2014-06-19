@@ -1,4 +1,4 @@
-var movieControllers = angular.module('movieControllers', []);
+var movieControllers = angular.module('movieControllers', ['ngAnimate']);
 
 movieControllers.controller('ListController', ['$scope', '$http', function($scope, $http){
   $http.get('js/data.json').success(function(data){

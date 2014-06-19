@@ -22,7 +22,7 @@
   </div>
 
   <ul class="movielist">
-    <li class="movie cf" ng-repeat="item in movies | filter: query | orderBy: movieOrder:direction">
+    <li ng-animate="'animate'" class="movie cf" ng-repeat="item in movies | filter: query | orderBy: movieOrder:direction">
       <a href="#/details/{{ movies.indexOf(item) }}">
         <img ng-src="http://image.tmdb.org/t/p/w500{{item.poster_path}}" alt="movie poster">
         <div class="info">
