@@ -1,5 +1,7 @@
 <section class="movieinfo">
   <div class="movie cf" ng-model="movies">
+    <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+    <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
     <h1>{{ movies[whichItem].title }}</h1>
     <div class="info">
       <img ng-src="http://image.tmdb.org/t/p/w500{{movies[whichItem].poster_path}}" alt="movie poster of {{ movies[whichItem].title }}">
