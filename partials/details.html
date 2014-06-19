@@ -1,0 +1,10 @@
+<section class="movieinfo">
+  <div class="movie cf" ng-model="movies">
+    <h1>{{ movies[whichItem].title }}</h1>
+    <div class="info">
+      <img ng-src="http://image.tmdb.org/t/p/w500{{movies[whichItem].poster_path}}" alt="movie poster of {{ movies[whichItem].title }}">
+      <div class="bio">Vote average: {{ movies[whichItem].vote_average }}</div>
+    </div>
+  </div>
+  <a href="index.html">&laquo; Back to search</a>
+</section>
