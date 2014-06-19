@@ -1,6 +1,6 @@
-var myNameSpace = angular.module('myApp', []);
+var movieControllers = angular.module('movieControllers', []);
 
-myNameSpace.controller('MyController', ['$scope', '$http', function($scope, $http){
+movieControllers.controller('ListController', ['$scope', '$http', function($scope, $http){
   $http.get('js/data.json').success(function(data){
     $scope.movies = data;
     $scope.movieOrder = "title";
