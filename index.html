@@ -8,8 +8,13 @@
 </head>
 <body>
   <div class="main" ng-controller = "MyController">
+    <div class="search">
+      <h1>Sarmad's Movie Directory</h1>
+      <label>search: </label>
+      <input ng-model="query" placeholder="Search for movies" autofocus>
+    </div>
     <ul class="movielist">
-      <li class="movie cf" ng-repeat="item in movies">
+      <li class="movie cf" ng-repeat="item in movies | filter: query">
         <img ng-src="http://image.tmdb.org/t/p/w500{{item.poster_path}}" alt="movie poster">
         <div class="info">
           <h2>{{item.title}}</h2>
