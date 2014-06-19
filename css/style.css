@@ -308,6 +308,16 @@ a.small {
   border-radius: 20px;
 }
 
-.movieinfo .btn {
+.movie.ng-enter.ng-enter-active,
+.movie.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
 
+.movie.ng-leave.ng-leave-active,
+.movie.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
